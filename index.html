@@ -59,14 +59,17 @@
 	
 		<br /><br /><br />
 		<button onclick="calculateCompatibility()">Calculate Compatibility</button>
+		<p id="compatibility"></p>
 
-
-		<script>
+<script>
 		console.log("Starting Matchmaker...");
 		function calculateCompatibility(){
-			console.log("calculateCompatibility()")
+			console.log("calculateCompatibility()");
+
+			document.getElementById("compatibility").innerHTML = "Your compatibility is..."
 		}
 
-		</script>
+</script>
+
 </body>
 </html>
