@@ -8,7 +8,7 @@
 <body>
   <h1>This is Jamison's Matchmaker</h1>
   <p>Instructions: Let's see if we're a match! Answer below using the drop down menu's and we will calculate if we would make a good match.</p>
-  <label>I love listening to music on my off time.</label><br />
+  	<label>I love listening to music on my off time.</label><br />
 	<select id="q1">
 		<option value="5">Strongly Agree</option>
 		<option value="4">Agree</option>
@@ -16,9 +16,9 @@
 		<option value="2">Disagree</option>
 		<option value="1">Strongly Disagree</option>
 	</select>
-  <br /><br />
+  	<br /><br />
   
-  <label>I like reading on my off time.</label><br />
+  	<label>I like reading on my off time.</label><br />
 	<select id="q2">
 		<option value="5">Strongly Agree</option>
 		<option value="4">Agree</option>
@@ -28,23 +28,23 @@
 	</select>
 	<br /><br />
 
-		<label>I enjoy playing video games.</label><br />
-		<select id="q3">
-			<option value="5">Strongly Agree</option>
-			<option value="4">Agree</option>
-			<option value="3">Neither agree nor disagree</option>
-			<option value="2">Disagree</option>
-			<option value="1">Strongly Disagree</option>
-		</select>
-		<br /><br />
+	<label>I enjoy playing video games.</label><br />
+	<select id="q3">
+		<option value="5">Strongly Agree</option>
+		<option value="4">Agree</option>
+		<option value="3">Neither agree nor disagree</option>
+		<option value="2">Disagree</option>
+		<option value="1">Strongly Disagree</option>
+	</select>
+	<br /><br />
 
-		<label>I primarily use instagram and discord as my social media outlets.</label><br />
-		<select id="q4">
-			<option value="5">Strongly Agree</option>
-			<option value="4">Agree</option>
-			<option value="3">Neither agree nor disagree</option>
-			<option value="2">Disagree</option>
-			<option value="1">Strongly Disagree</option>
+	<label>I primarily use instagram and discord as my social media outlets.</label><br />
+	<select id="q4">
+		<option value="5">Strongly Agree</option>
+		<option value="4">Agree</option>
+		<option value="3">Neither agree nor disagree</option>
+		<option value="2">Disagree</option>
+		<option value="1">Strongly Disagree</option>
 		</select>
 		<br /><br />
 
@@ -58,6 +58,15 @@
 		</select>
 	
 		<br /><br /><br />
+		<button onclick="calculateCompatibility()">Calculate Compatibility</button>
 
+
+		<script>
+		console.log("Starting Matchmaker...");
+		function calculateCompatibility(){
+			console.log("calculateCompatibility()")
+		}
+
+		</script>
 </body>
 </html>
