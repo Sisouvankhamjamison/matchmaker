@@ -67,7 +67,16 @@
 		console.log("Starting Matchmaker...");
 		function calculateCompatibility(){
 			console.log("calculateCompatibility()");
-		
+
+			const DESIRED_RESPONSE = [
+				5,
+				4,
+				5,
+				3,
+				4,
+			]
+			const MAX_SCORE = 15;
+			
 		let question1Response = document.getElementById("q1").selectedOptions[0].value;
 		let question2Response = document.getElementById("q2").selectedOptions[0].value;
 		let question3Response = document.getElementById("q3").selectedOptions[0].value;
@@ -100,7 +109,7 @@
 		console.log(question5Response);
 
 
-		
+
 			document.getElementById("compatibility").innerHTML = "Your compatibility is...";
 		}
 
