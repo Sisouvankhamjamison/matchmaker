@@ -75,7 +75,7 @@
 				3,
 				4,
 			]
-			
+		const MAX_SCORE = 25;			
 
 		let question1Response = document.getElementById("q1").selectedOptions[0].value;
 		let question2Response = document.getElementById("q2").selectedOptions[0].value;
@@ -120,7 +120,13 @@
 		console.log("c4="+question4Compatibility);
 		console.log("c5="+question5Compatibility);
 
-			document.getElementById("compatibility").innerHTML = "Your compatibility is...";
+		let totalCompatibility = question1Compatibility + question2Compatibility + question3Compatibility + question4Compatibility + question5Compatibility;
+		
+		totalCompatibility *= 100 / MAX_SCORE;
+		totalCompatibility = Math.round(totalCompatibility);
+		console.log("tc="+ totalCompatibility);	
+		
+		document.getElementById("compatibility").innerHTML = "Your compatibility is...";
 		}
 
 		</script>
